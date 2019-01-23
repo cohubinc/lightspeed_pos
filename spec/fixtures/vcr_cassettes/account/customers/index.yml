@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.merchantos.com/API/Account/-/Customer.json?limit=100&load_relations=all&offset=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - OAuth OAuth Token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 Feb 2016 00:46:37 GMT
+      Server:
+      - Apache/2.2.15 (CentOS)
+      X-Powered-By:
+      - PHP/5.4.44
+      X-Ls-Api-Bucket-Level:
+      - 76.99300456047/90
+      X-Ls-Oauth-Client-Id:
+      - '19570'
+      X-Ls-Acct-Id:
+      - '120645'
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '765'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{
+  "@attributes": {
+    "count": "2",
+    "offset": "0",
+    "limit": "100"
+  },
+  "Customer": [
+    {
+      "firstName": "Stanley",
+      "lastName": "Kubrick",
+      "title": "",
+      "company": "Lightspeed HQ",
+      "companyRegistrationNumber": "",
+      "vatNumber": "",
+      "creditAccountID": "0",
+      "customerTypeID": "2",
+      "discountID": "0",
+      "taxCategoryID": "0",
+      "customerID": "1",
+      "createTime": "2016-06-06T18:04:35+00:00",
+      "timeStamp": "2016-09-09T14:13:13+00:00",
+      "archived": "false"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Scott",
+      "title": "",
+      "company": "Lightspeed HQ",
+      "companyRegistrationNumber": "",
+      "vatNumber": "",
+      "creditAccountID": "0",
+      "customerTypeID": "2",
+      "discountID": "0",
+      "taxCategoryID": "0",
+      "customerID": "1",
+      "createTime": "2016-06-06T18:04:35+00:00",
+      "timeStamp": "2016-09-09T14:13:13+00:00",
+      "archived": "false"
+    }
+  ]
+}'
+    http_version:
+  recorded_at: Sat, 13 Feb 2016 00:46:38 GMT
+recorded_with: VCR 2.9.3

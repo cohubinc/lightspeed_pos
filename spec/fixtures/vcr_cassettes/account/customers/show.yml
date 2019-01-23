@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.merchantos.com/API/Account/-/Customer.json?customerID=1&limit=1&load_relations=all
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Wed, 23 Jan 2019 20:24:01 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '112'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d29b832ce752bf191a3ab48644811d26f1548275041; expires=Thu, 23-Jan-20
+        20:24:01 GMT; path=/; domain=.merchantos.com; HttpOnly; Secure
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Www-Authenticate:
+      - Basic realm="MerchantOS API"
+      X-Ls-Master-System:
+      - 'false'
+      X-Ls-Master-Catalog:
+      - 'false'
+      X-Ls-Master-Account:
+      - 'false'
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 49dcfb3e894e5dfe-BNA
+    body:
+      encoding: ASCII-8BIT
+      string: '{
+        "@attributes": {
+          "count": "1"
+        },
+        "Customer": {
+          "customerID": "6",
+          "firstName": "John",
+          "lastName": "Doe",
+          "title": "",
+          "company": "",
+          "companyRegistrationNumber": "",
+          "vatNumber": "",
+          "creditAccountID": "2",
+          "customerTypeID": "0",
+          "discountID": "0",
+          "taxCategoryID": "0",
+          "customerID": "7",
+          "createTime": "2017-03-03T15:39:34+00:00",
+          "timeStamp": "2017-03-16T04:10:29+00:00",
+          "archived": "false"
+        }
+      }'
+    http_version:
+  recorded_at: Wed, 23 Jan 2019 20:24:01 GMT
+recorded_with: VCR 4.0.0
