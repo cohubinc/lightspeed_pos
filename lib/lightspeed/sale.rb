@@ -8,6 +8,7 @@ module Lightspeed
 
     fields(
       saleID: :id,
+      createTime: :datetime,
       timeStamp: :datetime,
       discountPercent: :decimal,
       completed: :boolean,
