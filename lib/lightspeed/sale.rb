@@ -10,6 +10,7 @@ module Lightspeed
       saleID: :id,
       createTime: :datetime,
       timeStamp: :datetime,
+      completeTime: :datetime,
       discountPercent: :decimal,
       completed: :boolean,
       archived: :boolean,
