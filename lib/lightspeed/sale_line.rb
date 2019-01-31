@@ -40,7 +40,7 @@ module Lightspeed
       saleID: :id,
       TaxClass: :hash,
       Discount: :hash,
-      # Item: :hash,
+      Item: :hash,
       Note: :hash
     )
 
