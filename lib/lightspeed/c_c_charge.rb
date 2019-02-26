@@ -3,6 +3,10 @@ require_relative 'resource'
 module Lightspeed
   class CCCharge < Lightspeed::Resource
 
+    def self.id_field
+      'ccChargeID'
+    end
+
     fields(
       ccChargeID: :id,
       gatewayTransID: :string,
