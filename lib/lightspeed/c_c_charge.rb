@@ -1,7 +1,7 @@
 require_relative 'resource'
 
 module Lightspeed
-  class CcCharge < Lightspeed::Resource
+  class CCCharge < Lightspeed::Resource
 
     fields(
       ccChargeID: :id,
