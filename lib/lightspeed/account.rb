@@ -1,6 +1,6 @@
 require 'uri'
 require_relative 'categories'
-require_relative 'cc_charges'
+require_relative 'c_c_charges'
 require_relative 'customers'
 require_relative 'employees'
 require_relative 'items'
